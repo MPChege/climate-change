@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Change Information</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Climate Change Information</h1>
+  </header>
+  <main>
+    <div class="search-container">
+      <select name="Information" id="Information">
+        <option value="">--Please select an option--</option>
+        <option value="EF">Effects of Climate Change</option>
+        <option value="NO">What will happen if we do not take action?</option>
+        <option value="CC">What can be done to combat the effects?</option>
+      </select>
+      <button id="search-button">Search</button>
+    </div>
+
+<div class="output-container">
+  <h2 class="output"></h2>
+</div>
+
+<div class="content-container">
+  <div class="EF">
+    <!-- <h2>Effects of Climate Change</h2> -->
+    <div class="cards"></div>
+  </div>
+
+  <div class="NO">
+    <!-- <h2>What will happen if we do NOt take action?</h2> -->
+    <div class="cards"></div>
+  </div>
+
+  <div class="CC">
+    <!-- <h2>What can be done to combat the effects?</h2> -->
+    <div class="cards"></div>
+  </div>
+</div>
+<div class="form-container">
+    <form id="suggestion-form">
+      <label for="suggestion-input">PLEASE GIVE A SUGGESTION AS TO WHAT YOU THINK CAN BE DONE TO HELP
+        COMBAT CLIMATE CHANGE ?
+</label>
+      <input type="text" id="suggestion-input" name="suggestion">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+   
+</div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
